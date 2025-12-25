@@ -278,6 +278,23 @@ public class Settings
     [Display(Name = "Marlin server URL", Description = "Enter  url for your marlin server")]
     public Lockable<string>? marlinServerUrl { get; set; }
 
+    // OpenRouter AI
+    [NotNull]
+    [Display(Name = "OpenRouter API Key", Description = "Enter your OpenRouter API key for AI chat features. Leave empty to allow per-user configuration.")]
+    public Lockable<string>? openRouterApiKey { get; set; }
+
+    [NotNull]
+    [Display(Name = "OpenRouter Model", Description = "The AI model to use (e.g., google/gemini-2.0-flash-001, openai/gpt-4o-mini)")]
+    public Lockable<string>? openRouterModel { get; set; }
+
+    [NotNull]
+    [Display(Name = "Enable AI Chat", Description = "Enable or disable AI chat features for content recommendations and insights")]
+    public Lockable<bool>? enableAIChat { get; set; }
+
+    [NotNull]
+    [Display(Name = "AI System Prompt", Description = "Custom system prompt for the AI assistant. Customize how the AI responds to users.")]
+    public Lockable<string>? aiSystemPrompt { get; set; }
+
     // endregion Plugins
     
     // Misc.

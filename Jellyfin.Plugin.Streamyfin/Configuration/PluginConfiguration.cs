@@ -80,6 +80,11 @@ public class PluginConfiguration : BasePluginConfiguration
     jellyseerrServerUrl = new() { value = "Enter jellyseerr server url" },
     searchEngine = new() { value = SearchEngine.Jellyfin },
     marlinServerUrl = new() { value = "Enter marlin server url" },
+    // AI
+    openRouterApiKey = new() { value = "" },
+    openRouterModel = new() { value = "google/gemini-2.0-flash-001" },
+    enableAIChat = new() { value = false },
+    aiSystemPrompt = new() { value = "You are a friendly media assistant for Streamyfin, a Jellyfin media client. Help users discover content, provide recommendations, answer questions about movies and TV shows, and share interesting trivia. Be concise and engaging." },
     libraryOptions = new() { value = new LibraryOptions() },
     home = new()
     {
